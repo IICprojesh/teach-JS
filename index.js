@@ -1,68 +1,76 @@
-// concept of let, const and var
-// These are used in scoping variables
+// map, reduce, filter
 
-// const x = 5
-// x = 7
+// let gramWeights = [2323,5212,8673,617,899] // these are weights in gram and need to convert it into kg
 
-// implementation of let
+// let kgWeight = gramWeights.map((weight)=>{
+//     return weight/1000
+// })
+// console.log(kgWeight)
 
-// let letVariable = 5
-// {
-//     let letVariable = 10
-//     console.log("inside scope letVariable", letVariable)
-// }
+// let nums = [1,2,3,4,5,6,7,8,9,10]
 
-// console.log("outside scope letVariable", letVariable)
+// let odd_nums = nums.filter((num)=>{
+//     if (num%2 != 0){
+//         return num
+//     }
 
-
-// implementation of var
-
-// var varVariable = 18
-// {
-//     var varVariable = 81
-//     console.log("inside scope varVariable",varVariable)
-// }
-
-// console.log("outside scope varVariable",varVariable)
-
-// concept of Callback function
-// function greet(name, callback) {
-//     console.log("Hello, " + name + "!");
-
-//     // Call the callback function
-//     callback(name);
-//   }
-
-//   function sayGoodbye(name) {
-//     console.log("Goodbye! ",name);
-//   }
-
-// question: create a callback function
-
-
-//   // Pass the sayGoodbye function as a callback to the greet function
-//   greet("John", sayGoodbye);
-
-
-// forloop, while loop
-
-// for (let i = 1; i <= 5; i++) {
-//     console.log(i);
-// }
-
-// let arr = [10,12,14,45,30]
-// arr.forEach((num)=>{
-//     console.log(num)
 // })
 
+// console.log("odd_nums",odd_nums)
+
+// let nums = [22,10,44,12,50,2]
+// find the sum of the array using reduce function
+
+// const sum = nums.reduce((acc,curr)=>{
+//     return acc+curr
+// },0)
+
+// console.log("sum is",sum)
+
+// find the max value from array
+// let max = nums.reduce((acc,curr)=>{
+//     if (curr>acc){
+//         acc = curr
+//     }
+//     return acc
+
+
+// },-1000000)
+
+// console.log("max",max)
+
+// error handling in JS
+
+// let y = x+7
+
+// try {
+//     let y = x + 7
+// }
+// catch (e) {
+//     console.log("error has been found:")
+// }
+
+// console.log("after error line")
 
 
 
 
 
 
+// Hoisting concept in JS
+
+// myfunction()
+
+// function myfunction(){
+//     console.log("This is my function")
+// }
 
 
+// console.log(myvalue)
+// let myvalue = 1000
 
+// arrowFunc()
 
-
+// const arrowFunc = ()=>{
+//     console.log("This is arrow function")
+// }
