@@ -53,10 +53,6 @@
 // console.log("after error line")
 
 
-
-
-
-
 // Hoisting concept in JS
 
 // myfunction()
